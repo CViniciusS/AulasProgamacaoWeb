@@ -4,6 +4,11 @@ body {
 
 }
 
+header{
+    border-bottom: 1px solid #ccc;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
 header li {
     display: inline-block;
     margin-left: 3em;
@@ -17,6 +22,11 @@ header li {
 .container{
     padding-left: 10%;
     padding-right: 10%;
+}
+
+section {
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .identificacao {
@@ -37,12 +47,11 @@ header li {
 
 section h3 {
     font-size: 1.7em;
+    margin-bottom: 0.5em;
 }
 header li a {
     color: #99a0b0;
     font-weight: lighter;
-
-
 }
 
 .escuras {
@@ -58,12 +67,29 @@ header li a {
 
 .styleprojetos li{
     background-color:#6F768B;
+        padding: 1em;
+        margin-bottom: 2em;
     
+}
+
+#sobre p.text{
+    margin: 1em;
+}
+
+#sobre p.bio{
+    color: #579ff0;
+    font-size: 1.5em;
+    margin: 1em;
 }
 
 .styleprojetos li a {
     color: #ffffff;
     font-size: 1.3em;
+}
+
+.styleprojetos li p{
+    color: #fff;
+    margin-top: 0.5em;
 }
 
 #sobre img {
