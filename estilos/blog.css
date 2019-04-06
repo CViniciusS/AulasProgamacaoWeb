@@ -1,99 +1,181 @@
-body {
-    font-family: Helvetica, sans-serif
+*{
+    box-sizing: border-box; /*ADICIONAR O EFEITO GERAL*/
+}
 
+body{
+    font-family: Helvetica, sans-serif;
+}
 
+a {
+    text-decoration: none;
+}
+
+section img{
+    width: 100%;
+    max-width: 300px;
 }
 
 header{
     border-bottom: 1px solid #ccc;
     padding-top: 1em;
     padding-bottom: 1em;
+    position: fixed; /*posição fixa na tela*/
+    width: 100%;
+    height: 3em;
 }
-header li {
+
+header ul{
+    text-align: right /*alinhar o texto a direita*/
+}
+
+header li a{
+    color: #99a0b0;
+    font-weight: lighter; /*TAMANHO DA LETRA*/
+    text-transform: uppercase;
+}
+
+header li{
     display: inline-block;
-    margin-left: 3em;
+    margin-left: 3em;   
 }
 
 #contato li{
     display: inline-block;
-    margin: 1em;
+    
 }
+
+#contato li a{
+    display: inline-block;
+    margin: 1em;
+    width: 48px;
+    height: 48px;
+    text-indent: -9999px;  
+}
+
+#contato .email{
+    background-image: url("../Imagens/email.png")
+}
+
+#contato .twitter{
+    background-image: url("../Imagens/twitter.png")
+}
+
+#contato .fc{
+    background-image: url("../Imagens/fc.png")
+}
+
+#contato .linkedin{
+    background-image: url("../Imagens/linkedin.png")
+}
+
+#contato .github{
+    background-image: url("../Imagens/github.png")
+}
+
 
 .container{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left:10%;
+    padding-right:10%;
 }
 
-section {
+section{
     padding-top: 2em;
     padding-bottom: 2em;
+    text-align: center;
 }
 
-.identificacao {
+.identificacao{
     background-color: #579ff0;
-    color: #fcfcfcfd;
-    padding: 7em 2em;
+    color: #fcfcfd;
+    padding: 10em 2em 7em;
+
 }
 
-.identificacao h1 {
+.identificacao h1{
     font-size: 2.5em;
     margin-bottom: 0.7em;
 }
 
-.identificacao h2 {
+.identificacao h2{
     font-size: 1.5em;
     font-weight: lighter;
 }
 
-section h3 {
+section h3{
     font-size: 1.7em;
     margin-bottom: 0.5em;
 }
-header li a {
+
+header li a{
     color: #99a0b0;
     font-weight: lighter;
 }
 
-.escuras {
-    background-color: #2b312e;
+.styleprojetos li p{
+    color:#fff;
+    margin-top: 0.5em;
+    text-align:justify;
+    line-height: 1.2; 
+}
+
+.escuras{
+    background-color: #2b313e;
     color: #fcfcfd;
 }
 
-
-.claras {
+.claras{
+    
     background-color: #fcfcfd;
-    color: #2b313e; 
+    color: #2b313e;
+}
+
+.projetos-header{
+    float:left;
+    width: 30%;
+}
+
+.projetos-header h3{
+    margin-top: 1em;
+}
+
+.styleprojetos{
+    margin-left: 40%;
 }
 
 .styleprojetos li{
-    background-color:#6F768B;
-        padding: 1em;
-        margin-bottom: 2em;
-    
+    background-color:#6f768b;
+    padding: 1em;
+    margin-bottom: 2em;
 }
+
+.styleprojetos li a{
+    color: #ffffff;
+    font-size: 1.3em;
+}   
 
 #sobre p.text{
     margin: 1em;
+    width: 50%;
+    text-align: justify;
+    line-height: 1.4;
 }
 
 #sobre p.bio{
     color: #579ff0;
     font-size: 1.5em;
     margin: 1em;
+    width: 50%;
 }
 
-.styleprojetos li a {
-    color: #ffffff;
-    font-size: 1.3em;
+#sobre{
+    position: relative; /*posiçao rrelativa no sobre, pois vc colocou uma image absoluta*/
 }
 
-.styleprojetos li p{
-    color: #fff;
-    margin-top: 0.5em;
-}
-
-#sobre img {
+#sobre img{
     width: 200px;
+    position: absolute; /*colocar a imagem como absoluta*/
+    top:2em;
+    right:10%;
 }
 
 footer{
